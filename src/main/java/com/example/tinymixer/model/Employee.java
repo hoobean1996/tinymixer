@@ -1,13 +1,13 @@
 package com.example.tinymixer.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
+@Table(name = "employee")
 public class Employee {
-    private @Id @GeneratedValue Long id;
+    @Id @GeneratedValue(strategy= GenerationType.SEQUENCE)
+    private  Long id;
     private String name;
     private String role;
 

@@ -1,4 +1,4 @@
-package com.example.tinymixer.service;
+package com.example.tinymixer.service.impl;
 
 import org.springframework.stereotype.Service;
 
